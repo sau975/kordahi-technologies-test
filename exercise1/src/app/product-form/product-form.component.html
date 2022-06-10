@@ -1,0 +1,14 @@
+<form [formGroup]="form" (ngSubmit)="save()">
+    <div>
+        <label>Product Name</label>
+        <input formControlName="productName">
+    </div>
+    <div>
+        <label>Price</label>
+        <input formControlName="price">
+    </div>
+    <button type="submit">Save</button>
+    <button type="button" (click)="reset()">Reset</button>
+</form>
+
+<p [style.color]="color">{{message}}</p>    
